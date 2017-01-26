@@ -25,7 +25,7 @@ namespace githubpractice
 
             Random classs = new Random();
             randomnumber = classs.Next(starting, ending + 1);
-
+            //asking for the details
             Console.WriteLine("Now please try to guess a number between " + thestart + " and " + theend + ".");
             string guess = Console.ReadLine();
             int numguess = Int32.Parse(guess);
