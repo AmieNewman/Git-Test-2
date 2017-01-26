@@ -13,13 +13,24 @@ namespace githubpractice
             int randomnumber = 0;
             int guesses = 0;
             //random number and number of guesses 
+          //  Random classs = new Random();
+          //  randomnumber = classs.Next(starting, ending +1);
+
+            Console.WriteLine("Please give me a starting number");
+            string thestart = Console.ReadLine();
+            int starting = Int32.Parse(thestart);
+            Console.WriteLine("Please give me an ending number");
+            string theend = Console.ReadLine();
+            int ending = Int32.Parse(theend);
+
             Random classs = new Random();
-            randomnumber = classs.Next(1, 101);
+            randomnumber = classs.Next(starting, ending + 1);
 
-            Console.WriteLine("Guess a number between 1~100");
-
+            Console.WriteLine("Now please try to guess a number between " + thestart + " and " + theend + ".");
             string guess = Console.ReadLine();
             int numguess = Int32.Parse(guess);
+
+          
 
             Console.WriteLine(numguess);
 
